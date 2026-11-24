@@ -8,3 +8,6 @@ class RequestAdmin(admin.ModelAdmin):
     readonly_fields=('code','created')
 admin.site.register([Service,Review,Chat,Ticket])
 admin.site.site_header='IT Support Pro • Управление'
+admin.site.site_title='IT Support Pro'
+admin.site.index_title='Управление заявками и услугами'
+RequestAdmin.list_editable=('status',)
